@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce</title>
+</head>
+<body>
+    <script>
+        let arr=[23,55,64,52,5,26,72];
+        let add=arr.reduce(function(sum,value,index){
+            debugger
+            return sum+value;
+        },0)
+        document.write('The Sum is ',add);
+    </script>
+</body>
+</html>

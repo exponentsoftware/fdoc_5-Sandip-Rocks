@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+
+<body>
+    <script>
+        let arr = [10, 20, 30, 40, 50];
+        let sum = 0;
+        arr.map(function (value, index) {
+            sum = sum + arr[index];
+        })
+        document.write(sum)
+
+        //Object
+        let oneArr = [
+            {'Product': 'Laptop', 'Price': 40000},
+            {'Product': 'Mouse', 'Price': 500},
+            {'Product': 'Speaker', 'Price': 2000},
+            {'Product': 'Desktop', 'Price': 25000},
+        ];
+        let secArr = oneArr.map(function (value) {
+            return value.Product;
+        })
+        document.write("<br>",secArr)
+        let thirdArr = oneArr.map(function (value) {
+            return value.Price
+        });
+        document.write("<br>", thirdArr);
+    </script>
+</body>
+
+</html>
